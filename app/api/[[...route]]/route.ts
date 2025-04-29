@@ -9,6 +9,8 @@ const app = new Hono().basePath("/api");
 
 const routes = app.route("/accounts", accounts);
 
+console.log(routes);
+
 app.route("/accounts", accounts);
 
 export const GET = handle(app);
